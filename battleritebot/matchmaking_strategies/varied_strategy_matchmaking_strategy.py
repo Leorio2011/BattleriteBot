@@ -13,4 +13,4 @@ class VariedStrategyMatchmakingStrategy(MatchmakingStrategy):
     def assign_teams(self, match: Match):
         random_index = random.randint(0, len(self.strategyArray)
         selected_strategy = self.strategy_array[randomIndex]
-        selected_strategy.assign_teams(self, match)
+        selected_strategy.assign_teams(match)
